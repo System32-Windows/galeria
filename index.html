@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-😍Galeria Pangusiów😍-</title>
-    <script src="myscript.js"></script>
     <style>
         body {
             margin: 0;
@@ -41,6 +40,52 @@
             margin-top: 8px;
             vertical-align: middle;
         }
+        
+        @media(max-width:800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        
+        @media(max-width:600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        
+        #c1 img {
+            transition: all 0.4s cubic-bezier(1, 0.03, 0.46, 1.86);
+        }
+        
+        #c1 img:hover {
+            transform: scale(0.71) rotate(45deg);
+        }
+        
+        #c2 img {
+            transition: all 0.4s cubic-bezier(1, -0.12, 1, -0.1);
+        }
+        
+        #c2 img:hover {
+            transform: scale(0.71) rotate(45deg);
+        }
+        
+        #c3 img {
+            transition: all 0.4s cubic-bezier(0, 3.78, 1, -2.57);
+        }
+        
+        #c3 img:hover {
+            transform: scale(0.71) rotate(45deg);
+        }
+        
+        #c4 img {
+            transition: all 0.4s cubic-bezier(0, 0.41, 0.76, 3.77);
+        }
+        
+        #c4 img:hover {
+            transform: scale(0.71) rotate(45deg);
+        }
     </style>
 </head>
 
@@ -54,28 +99,28 @@
         </div>
     </header>
     <div class="row">
-        <div class="column">
+        <div class="column" id="c1">
             <img src="http://system32-window.github.io/pango.pl/Roblox png.gif" alt="gif">
             <img src="http://system32-window.github.io/pango.pl/pango%20blocks.png" alt="">
-            <img src="http://system32-window.github.io/pango.pl/Roblox png.gif" alt="gif">
+            <img src="http://system32-window.github.io/pango.pl/pangus.png" alt="gif">
             <img src="http://system32-window.github.io/pango.pl/pango%20blocks.png" alt="">
         </div>
-        <div class="column">
+        <div class="column" id="c2">
             <img src="http://system32-window.github.io/pango.pl/Roblox png.gif" alt="gif">
             <img src="http://system32-window.github.io/pango.pl/pango%20blocks.png" alt="">
             <img src="http://system32-window.github.io/pango.pl/Pango(2).png" alt="gif">
             <img src="http://system32-window.github.io/pango.pl/pango%20blocks.png" alt="">
         </div>
-        <div class="column">
+        <div class="column" id="c3">
             <img src="http://system32-window.github.io/pango.pl/Roblox png.gif" alt="gif">
             <img src="http://system32-window.github.io/pango.pl/pango%20blocks.png" alt="">
             <img src="http://system32-window.github.io/pango.pl/Roblox png.gif" alt="gif">
             <img src="http://system32-window.github.io/pango.pl/pango%20blocks.png" alt="">
         </div>
-        <div class="column">
+        <div class="column" id="c4">
             <img src="http://system32-window.github.io/pango.pl/pango%20story%20time.jpg" alt="gif">
             <img src="http://system32-window.github.io/pango.pl/pango%20blocks.png" alt="">
-            <img src="http://system32-window.github.io/pango.pl/Roblox png.gif" alt="gif">
+            <img src="http://system32-window.github.io/pango.pl/pangus.png" alt="gif">
             <img src="http://system32-window.github.io/pango.pl/pango%20blocks.png" alt="">
         </div>
 </body>
